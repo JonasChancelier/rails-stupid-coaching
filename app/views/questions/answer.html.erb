@@ -1,0 +1,16 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+    <%= @question %>
+    <p> - You</p>
+
+    <% if @question == "I am going to work" %>
+    <p> "Great !"</p>
+    <% elsif @question.include? "?" %>
+    <p> "Silly question, get dressed and go to work!"</p>
+    <% else %>
+    <p> "I don't care, get dressed and go to work!" </p>
+    <% end %>
+    <p> - Your coach </p>
+
+<%= link_to "Ask new question", ask_path %>
